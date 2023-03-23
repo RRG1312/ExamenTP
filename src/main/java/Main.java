@@ -1,7 +1,12 @@
-import Ejercicio1.MontecarloPi;
+import Ejercicio1.Matematicas;
+import Ejercicio1.Menu1;
 
 public class Main {
     public static void main(String[] args) {
-        MontecarloPi.calcularAproximacion();
+        try {
+            Menu1.menu();
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 }
